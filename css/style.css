@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --header-size: 140px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: var(--header-size);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #252850;
+    z-index: 1;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+.navbar {
+    height: inherit;
+}
+
+.navbar-collapse {
+    justify-content: end;
+    align-items: end !important;
+    height: inherit;
+}
+
+.navbar-collapse a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-collapse a:hover {
+    color: #ff0000;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #ff0000 !important;
+}
+
+.container-fluid {
+    height: inherit;
+}
+
+.container-fluid > a {
+    height: inherit;
+}
+
+.banner {
+    margin-top: var(--header-size);
+    display: flex;
+    justify-content: space-between;
+    background-color: #c8eaf059;
+}
+
+.banner_logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.banner_logos h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.whatsapp {
+    position: fixed;
+    z-index: 9999;
+    height: 50px;
+    width: 50px;
+    right: 1rem;
+    top: 90%;
+}
+
+.whatsapp:hover {
+    height: 55px;
+    width: 55px;
+}
+
+.up {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3942bb;
+    left: 1rem;
+    position: fixed;
+    top: 85%;
+    z-index: 9999;
+}
+
+.up:hover {
+    color: #1e2368;
+}
+
+.carrusel {
+    height: 100vh;
+}
+
+.carrusel img {
+    height: 100vh;
+}
+
+.contenedor {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion {
+    background-color: #252850;
+    height: 10rem;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 3rem;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.75);
+}
+
+.bg_contenedor {
+    background-color: #c8eaf018;
+}
+
+.bg_contenedor h2 {
+    font-size: 36px;
+}
+
+.bg_contenedor h3 {
+    font-size: 24px;
+}
+
+.bg_contenedor h4 {
+    font-size: 21px;
+}
+
+.bg_contenedor p {
+    font-size: 17px;
+    color: rgb(66, 64, 64);
+    margin-right: 5rem;
+    text-align: justify;
+}
+
+.bb::after {
+    display: block;
+    content: "";
+    border-bottom: 2px solid rgba(128, 128, 128, 0.623);
+    width: 90%;
+}
+
+.banner_gris {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #252525;
+}
+
+.banner_icon {
+    text-align: center;
+    align-items: center;
+}
+
+.banner_icon h2 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.banner_icon h3 {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.contenedor_icon {
+    background-color: #c8eaf018;
+}
+
+.contenedor_icon h3 {
+    color: #252850;
+    font-weight: bold;
+}
+
+.contenedor_icon p {
+    color: #808080ce;
+    text-align: justify;
+}
+
+.trabajos {
+    text-align: center;
+    background-color: #2525250a;
+}
+
+.bg_violeta {
+    background-color: #252850;
+    height: 200px;
+    text-align: center;
+}
+
+.bg_violeta h3 {
+    color: #ff0000;
+    font-size: 32;
+    font-weight: bold;
+}
+
+.bg_violeta h4 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.bg_grey {
+    background-color: #252525;
+    height: 200px;
+    text-align: start;
+}
+
+.bg_grey h3 {
+    color: #ff0000;
+    font-size: 32;
+    font-weight: bold;
+}
+
+.bg_grey h4 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.bg_black {
+    background-color: #000000;
+}
+
+.bg_black h3 {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.bg_black h4 {
+    color: #ffffff;
+    text-align: justify;
+    font-size: 21px;
+}
+
+.bg_black img {
+    border-radius: 5px;
+
+}
+
+footer {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    background-color: #252850;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 1rem;
+}
+
+footer img {
+    height: 25px;
+    width: auto;
+}

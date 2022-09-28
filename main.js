@@ -1,0 +1,20 @@
+let header = document.querySelector('header')
+let up = document.getElementById('up')
+let root = document.documentElement;
+
+window.addEventListener('scroll', () => {
+    
+    let scroll = window.scrollY
+    if (scroll > 0) {
+        header.style.background = '#252850d2'
+        root.style.setProperty('--header-size', '100px')
+    } else {
+        header.style.background = ''
+        root.style.setProperty('--header-size', '')
+    }
+    if (scroll > 300) {
+        up.style.display = ''
+    } else {
+        up.style.display = 'none'
+    }
+})
