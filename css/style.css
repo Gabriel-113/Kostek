@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -20,6 +21,7 @@ header {
     top: 0;
     background-color: #252850;
     z-index: 1;
+    transition: all 200ms ease-out;
 }
 
 .logo {
@@ -40,7 +42,7 @@ header {
 .navbar-collapse a {
     color: #ffffff;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold
 }
 
 .navbar-collapse a:hover {
@@ -56,7 +58,7 @@ header {
     height: inherit;
 }
 
-.container-fluid > a {
+.container-fluid>a {
     height: inherit;
 }
 
@@ -109,11 +111,40 @@ header {
 }
 
 .carrusel {
-    height: 100vh;
+    height: 700px;
 }
 
 .carrusel img {
-    height: 100vh;
+    height: 700px;
+}
+
+.font_carrusel {
+    font-size: 62px !important;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: #1e2368 !important;
+    font-weight: bold !important;
+    border: none !important;
+    height: 3rem !important;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(80, 79, 79, 0) !important;
+    border: 2px solid #1e2368 !important;
+}
+
+.btn-outline-secondary {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    border: #1e2368 2px solid !important;
+    height: 3rem !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #1e2368 !important;
+    color: #ffffff !important;
 }
 
 .contenedor {
@@ -150,6 +181,11 @@ header {
 
 .bg_contenedor h4 {
     font-size: 21px;
+}
+
+.titulo {
+    font-weight: bold;
+    color: #1e2368;
 }
 
 .bg_contenedor p {
@@ -242,6 +278,15 @@ header {
     font-size: 24px;
 }
 
+.mailto {
+    text-decoration: none;
+    color: #fffefe;
+}
+
+.mailto:hover {
+    color: #ff0000;
+}
+
 .bg_black {
     background-color: #000000;
 }
@@ -260,6 +305,70 @@ header {
 .bg_black img {
     border-radius: 5px;
 
+}
+
+.proyectos {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.proyectos img {
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3b408d88;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    color: #fffefe;
+}
+
+.tarjeta:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tarjeta .capa h5 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    transition: all 300ms ease-out;
+}
+
+.tarjeta .capa i {
+    font-size: 26px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.tarjeta:hover>.capa h5 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+    transition: all 300ms ease-out;
+
+}
+
+#acerca h3 {
+    font-size: 32px;
 }
 
 footer {
