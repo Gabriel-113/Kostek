@@ -1,9 +1,10 @@
 let header = document.querySelector('header')
 let up = document.getElementById('up')
 let root = document.documentElement;
+let carrusel = document.getElementsByClassName('proyectos')[0]
 
 window.addEventListener('scroll', () => {
-    
+
     let scroll = window.scrollY
     if (scroll > 0) {
         header.style.background = '#252850d2'
@@ -18,3 +19,10 @@ window.addEventListener('scroll', () => {
         up.style.display = 'none'
     }
 })
+
+carrusel.addEventListener('click', ()=> {
+    let modal = document.getElementById('contenedor_carrusel')
+    modal.style.display = ''
+})
+
+

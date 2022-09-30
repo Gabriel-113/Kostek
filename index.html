@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald&family=PT+Serif:wght@700&family=Roboto&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -54,12 +55,12 @@
         <div class="banner_logos">
             <h3 class="me-3">Contamos con el sistema <br> de construcción SIP:</h3>
             <a href="http://www.termoplak.com/index.html" target="_blank"><img src="/assets/images/logo-termoplak.png"
-                    style="height: 111px; width: auto" alt="Termoplak logo"></a>
+                    alt="Termoplak logo" class="termoplak"></a>
         </div>
         <div class="banner_logos me-2">
             <h3 class="me-3">Nuestro proveedor:</h3>
-            <a href="https://novopor.com.ar/" target="_blank"><img src="/assets/images/logo-novopor.png"
-                    style="width: auto" alt="" class=""></a>
+            <a href="https://novopor.com.ar/" target="_blank"><img src="/assets/images/logo-novopor.png" alt=""
+                    class="novopor"></a>
         </div>
     </div>
     <a href="https://wa.me/+5492284220744?text=Me%20gustaría%20saber%20más%20información%20sobre%20el%20servicio%20de%20KOSTEK"
@@ -80,30 +81,28 @@
             <div class="carousel-item active">
                 <img src="/assets/images/bg1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption mb-5">
-                    <h1 class="font_carrusel mb-5">10 AÑOS DE EXPERIENCIA</h1>
-                    <h2 class="font_carrusel mb-5">El mejor sistema a nivel mundial</h2>
+                    <p class="mundial mb-5 animate__animated animate__bounceInRight">El mejor sistema a nivel
+                        <span class="b">mundial</span>
+                    </p>
+                    <p class="experiencia mb-1 animate__animated animate__bounceInLeft">10 AÑOS DE EXPERIENCIA</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/assets/images/bg2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="font_carrusel mb-5">DISEÑOS ILIMITADOS</h2>
-                    <h1 class="font_carrusel mb-5">AISLACIÓN TÉRMICA Y ACÚSTICA A OTRO NIVEL</h1>
-                    <h4 class="font_carrusel mb-5">LA DESICIÓN ES SIMPLE</h4>
+                <div class="carousel-caption">
+                    <p class="animate__animated animate__bounceInDown mb-1 bg_v">DISEÑOS ILIMITADOS</p>
+                    <p class="aislacion mb-2 animate__animated animate__fadeInLeft">AISLACIÓN TÉRMICA Y ACÚSTICA A OTRO
+                        NIVEL</p>
+                    <h4 class="desicion mb-5 animate__animated animate__fadeInRightBig">LA DESICIÓN ES SIMPLE</h4>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/assets/images/bg3.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="font_carrusel mb-5">CONOCÉ A NUESTRO EQUIPO</h3>
-                    <h1 class="font_carrusel mb-5">CREEMOS EN NUESTRO POTENCIAL</h1>
-                    <h5 class="font_carrusel mb-5">TIEMPO EN OBRA DE UN 30% A 50% MENOS</h5>
-                    <div class="d-flex justify-content-center"> <a href="" class="mb-2"><button type="button"
-                                class="btn btn-secondary btn_carrusel">CONTACTENOS</button>
-                        </a><a href="" class="btn_carrusel_1 mb-2"><button type="button"
-                                class="btn btn-outline-secondary">SIGANOS EN NUESTRA REDES</button>
-                        </a></div>
-
+                <div class="carousel-caption mb-5">
+                    <p class="equipo animate__animated animate__lightSpeedInRight">CONOCÉ A NUESTRO EQUIPO</p>
+                    <h1 class="potencial animate__animated animate__lightSpeedInLeft">CREEMOS EN NUESTRO POTENCIAL</h1>
+                    <p class="obra mb-5 pb-5 animate__animated animate__backInUp">TIEMPO EN OBRA DE UN 30% A 50% MENOS
+                    </p>
                 </div>
             </div>
         </div>
@@ -127,7 +126,7 @@
     </div>
     <div class="bg_contenedor" id="nosotros">
         <div class="contenedor mt-5">
-            <div class="col-6 bb">
+            <div class="bb">
                 <h2 class="titulo">ACERCA DE NOSOTROS</h2>
                 <h3 class="titulo">¿A QUÉ NOS DEDICAMOS?</h3>
                 <p>Bienvenidos, Somos Kostek Construcciones en Seco, dedicados a brindar soluciones integrales en la
@@ -149,7 +148,7 @@
                     las
                     personas y disminuir el Impacto Ambiental a través del Ahorro Energético.</p>
             </div>
-            <div class="col-6 mt-5">
+            <div class="mt-5">
                 <h3 class="titulo">Construccion sustentable</h3>
                 <p> Proporcionan una excelente aislación térmica que sobrepasa los requerimientos prácticos y
                     normativos,
@@ -163,23 +162,33 @@
             </div>
         </div>
     </div>
-    <div class="banner_gris mt-5 p-5">
-        <div class="banner_icon mt-1 me-5" data-aos="fade-right">
+    <div class="banner_v mt-5 p-5">
+        <div class="banner_icon mt-3 me-5" data-aos="flip-left" data-aos-delay="200">
             <img src="/assets/images/icon-image/fact1.png" alt="">
-            <h2 class="mt-4">61</h2>
-            <h3 class="mt-4">PROYECTOS TOTALES</h3>
+            <h2 class="mt-4">PROYECTOS TOTALES</h2>
+            <h3>61</h3>
         </div>
-        <div class="banner_icon mt-1" data-aos="fade-left">
+        <div class="banner_icon mt-3 me-5" data-aos="flip-left" data-aos-delay="300">
+            <img src="/assets/images/icon-image/house.png" alt="">
+            <h2 class="mt-4 icon_descripcion">TIEMPOS DE OBRA</h2>
+            <h3>REDUCIDOS</h3>
+        </div>
+        <div class="banner_icon mt-3 me-5" data-aos="flip-left" data-aos-delay="400">
+            <img src="/assets/images/icon-image/construction.png" alt="">
+            <h2 class="mt-4 icon_descripcion">AHORRO DE</h2>
+            <h3>MATERIALES</h3>
+        </div>
+        <div class="banner_icon mt-3 me-5" data-aos="flip-left" data-aos-delay="500">
             <img src="/assets/images/icon-image/fact3.png" alt="">
-            <h2 class="mt-4">10</h2>
-            <h3 class="mt-4">AÑOS DE EXPERIENCIA</h3>
+            <h2 class="mt-4">AÑOS DE EXPERIENCIA</h2>
+            <h3>10</h3>
         </div>
     </div>
     <div class="contenedor_icon mt-5">
         <div class="row text-center">
             <div class="col-12  mt-5 mb-5">
                 <h5>SOMOS ESPECIALISTAS</h5>
-                <h1 class="titulo">¿Qué podemos hacer?</h1>
+                <h1 class="hacer">¿Qué podemos hacer?</h1>
             </div>
         </div>
         <div class="row" style="justify-content: center">
@@ -206,7 +215,7 @@
                     <div class="me-4"> <img src="/assets/images/icon-image/service-icon3.png" alt="service-icon"> </div>
                     <div class="mb-5">
                         <h3 class="titulo">Diseño de interiores</h3>
-                        <p>Emplacamos con placas cementicias de primera calidad.<br>
+                        <p>Emplacamos con placas cementicias de primera calidad.
                         </p>
                     </div>
                 </div>
@@ -237,9 +246,40 @@
     <div class="trabajos" id="proyectos">
         <div class="pt-5">
             <p>TRABAJOS DE EXCELENCIA</p>
-            <h2 class="titulo">PROYECTOS MAS RECIENTES</h2>
+            <h2 class="recientes">PROYECTOS MAS RECIENTES</h2>
         </div>
-        <div class="d-flex justify-content-center">
+        <div id="contenedor_carrusel">
+            <div class="item_carrusel" id="item_carrusel_1">
+                <div class="ventana_carrusel" id="ventana_carrusel_1">
+                    <img src="/assets/images/bg1.jpg" alt="">
+
+                </div>
+                <div class="flechas_carrusel">
+                    <a href="#item_carrusel_3"><i class="bi bi-arrow-left-square-fill"></i></a>
+                    <a href="#item_carrusel_2"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+            <div class="item_carrusel" id="item_carrusel_2">
+                <div class="ventana_carrusel" id="ventana_carrusel_2">
+                    <img src="/assets/images/bg2.jpg" alt="">
+
+                </div>
+                <div class="flechas_carrusel">
+                    <a href="#item_carrusel_1"><i class="bi bi-arrow-left-square-fill"></i></a>
+                    <a href="#item_carrusel_3"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+            <div class="item_carrusel" id="item_carrusel_3">
+                <div class="ventana_carrusel" id="ventana_carrusel_3">
+                    <img src="/assets/images/bg3.jpeg" alt="">
+                </div>
+                <div class="flechas_carrusel">
+                    <a href="#item_carrusel_2"><i class="bi bi-arrow-left-square-fill"></i></a>
+                    <a href="#item_carrusel_1"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="tarjetas_obras">
             <div class="proyectos">
                 <div class="tarjeta">
                     <img src="/assets/images/loma-negra/3.jpeg" alt="Loma Negra">
@@ -273,38 +313,43 @@
         </div>
     </div>
     <div class="mt-5">
-        <div class="d-flex align-items-center col-12">
+        <div class="d-flex align-items-center col-12" id="contactenos">
             <div class="col-lg-4 bg_violeta">
                 <div>
-                    <h3 class="mt-5">CONTACTENOS:</h3>
-                    <h4>2284-220744 <br> 2284-728873</h4>
+                    <h3 class="mt-5">CONTACTENOS</h3>
+                    <i class="bi bi-telephone"> 2284-220744</i>
+                    <h4><br><i class="bi bi-telephone"> 2284-728873</i></h4>
                 </div>
             </div>
             <div class="col-lg-8 bg_grey">
                 <div class="align-items-center">
                     <h3 class="mt-5 ms-5">NUESTRO MAIL</h3>
 
-                    <h4 class="ms-5"><a href="mailto:kostek.construcciones.seco@gmail.com" class="mailto">kostek.construcciones.seco@gmail.com</a></h4>
+                    <h4 class="ms-5 mt-4 d-flex"><i class="bi bi-envelope d-flex pe-2"></i><a
+                            href="mailto:kostek.construcciones.seco@gmail.com"
+                            class="mailto">kostek.construcciones.seco@gmail.com</a></h4>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg_black mt-5" id="acerca">
-        <div class="contenedor">
-            <div class="col-6 mt-5 me-5" data-aos="fade-down">
-                <h3>ACERCA DEL SISTEMA</h3>
-                <h4>PARA POSEER EL MISMO
+    <div class="bg_black mt-5 mb-5" id="acerca">
+        <div class="contenedor contenedor_acerca">
+            <div class="" data-aos="fade-down">
+                <div class="d-flex mt-5">
+                    <i class="bi bi-caret-right-fill"></i>
+                    <h3 class="">ACERCA DEL SISTEMA</h3>
+                </div>
+
+                <h4 class="me-5">PARA POSEER EL MISMO
                     COEFICIENTE TÉRMICO Y ACúSTICO, SE PRECISA UNA PARED DE
                     MANPOSTERIA DE 2.32 metros, es decir, una destacable
                     diferencia. ADEMAS ESTE SISTEMA de construcción
                     cumple con todas las regulaciones a nivel mundial.</h4>
-                <div class="col-6 mt-5"><img src="assets/images/ejemplo%203.jpeg" alt=""
-                        style="width: 500px; height: 350px;">
+                <div ><img src="assets/images/ejemplo%203.jpeg" alt="">
                 </div>
             </div>
-            <div class="col-6 mt-5" data-aos="fade-up">
-                <img src="assets/images/pared_steel_framing.jpeg" alt="" style="width: 500px; height: 350px;"
-                    class="me-3 mb-5">
+            <div class="mt-5" data-aos="fade-up">
+                <img src="assets/images/pared_steel_framing.jpeg" alt="" >
                 <h4 class="mt-5">Los perfiles cuentan con una característica mecánica y
                     recubrimiento
                     de cada perfil bajo las normas IRAM
@@ -327,9 +372,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true });
-    </script>
+    <script>AOS.init({ once: true });</script>
 </body>
 
 </html>
