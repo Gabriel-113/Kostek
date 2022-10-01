@@ -292,7 +292,7 @@ header {
     background-color: #c8eaf018;
 }
 
-.contenedor_icon > div {
+.contenedor_icon>div {
     display: flex;
     flex-wrap: wrap;
 }
@@ -602,6 +602,7 @@ footer img {
     body {
         width: 100vw;
     }
+
     .logo {
         width: 100px;
         height: 120px;
@@ -657,7 +658,7 @@ footer img {
         font-size: 80%;
     }
 
-    .bg_contenedor{
+    .bg_contenedor {
         display: flex;
         flex-direction: column;
     }
@@ -688,7 +689,7 @@ footer img {
     }
 
     .bb::after {
-        display:none
+        display: none
     }
 
     .contenedor_icon p {
@@ -696,15 +697,14 @@ footer img {
         font-size: 17px !important;
     }
 
-   #contactenos {
-    align-items: center;
-   } 
+    #contactenos {
+        align-items: center;
+    }
 
     .mailto {
         font-size: 16px;
     }
 
-    
     #acerca img {
         width: 300px;
         height: 250px;
@@ -726,7 +726,11 @@ footer img {
     }
 
     .carrusel {
-        height: 500px;
+        height: 400px;
+    }
+
+    .carrusel img {
+        height: 400px;
     }
 
     .contenedor_icon p {
@@ -769,5 +773,9 @@ footer img {
 
     .animate__animated {
         animation: none !important;
+    }
+
+    .capa:hover {
+        opacity: 0;
     }
 }
