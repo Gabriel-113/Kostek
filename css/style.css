@@ -53,9 +53,12 @@ header {
     color: #ff0000;
 }
 
-.navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     color: #ff0000 !important;
+}
+
+.nav-link:focus {
+    color: #ffffff !important;
 }
 
 .container-fluid {
@@ -208,7 +211,7 @@ header {
     height: 10rem;
     text-align: center;
     color: #ffffff;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 50px;
     border-radius: 5px;
     box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.75);
@@ -217,9 +220,8 @@ header {
 }
 
 .bg_contenedor {
-    display: grid;
-    grid-template-columns: 100%;
-    background-color: #c8eaf018;
+    display: flex;
+    justify-content: center;
 }
 
 .bg_contenedor h2 {
@@ -288,6 +290,11 @@ header {
 
 .contenedor_icon {
     background-color: #c8eaf018;
+}
+
+.contenedor_icon > div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contenedor_icon h3 {
@@ -520,6 +527,8 @@ header {
 #acerca img {
     height: 350px;
     width: 500px;
+    max-width: 100%;
+    padding: 10px;
 }
 
 footer {
@@ -536,8 +545,6 @@ footer img {
     height: 25px;
     width: auto;
 }
-
-
 
 @media (max-width: 991.98px) {
     .navbar-collapse {
@@ -592,7 +599,14 @@ footer img {
 }
 
 @media (max-width: 575.98px) {
-    
+    body {
+        width: 100vw;
+    }
+    .logo {
+        width: 100px;
+        height: 120px;
+    }
+
     .banner h3 {
         font-size: 16px;
     }
@@ -609,6 +623,7 @@ footer img {
     .novopor {
         height: 50px !important;
     }
+
     .carrusel {
         height: 500px;
     }
@@ -642,6 +657,18 @@ footer img {
         font-size: 80%;
     }
 
+    .bg_contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor_nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
     .bg_contenedor h2 {
         font-size: 20px;
     }
@@ -655,7 +682,13 @@ footer img {
     }
 
     .bg_contenedor p {
-        font-size: 13px;
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .bb::after {
+        display:none
     }
 
     .contenedor_icon p {
@@ -663,20 +696,24 @@ footer img {
         font-size: 17px !important;
     }
 
+   #contactenos {
+    align-items: center;
+   } 
+
+    .mailto {
+        font-size: 16px;
+    }
+
+    
     #acerca img {
-        width: 200px;
-        height: 150px;
+        width: 300px;
+        height: 250px;
     }
 
     #acerca h4 {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 375px) {
-    .logo {
-        width: 100px;
-        height: 120px;
+        font-size: 17px;
+        text-align: justify;
+        margin-right: 0px;
     }
 
     .banner_v h2,
@@ -690,16 +727,6 @@ footer img {
 
     .carrusel {
         height: 500px;
-    }
-
-    #nosotros {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    #nosotros, h2, h3, h4, p {
-        display: block;
     }
 
     .contenedor_icon p {
@@ -726,7 +753,12 @@ footer img {
     }
 
     .mailto {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .bg_black {
+        height: auto;
+        text-align: center;
     }
 
     .contenedor_acerca {
@@ -735,8 +767,7 @@ footer img {
         align-items: center;
     }
 
-    #acerca img {
-        display: none;
+    .animate__animated {
+        animation: none !important;
     }
-
 }
