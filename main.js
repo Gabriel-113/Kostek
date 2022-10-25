@@ -1,7 +1,6 @@
 let header = document.querySelector('header')
 let up = document.getElementById('up')
 let root = document.documentElement;
-let carrusel = document.getElementsByClassName('proyectos')[0]
 
 window.addEventListener('scroll', () => {
 
@@ -20,9 +19,15 @@ window.addEventListener('scroll', () => {
     }
 })
 
-carrusel.addEventListener('click', ()=> {
-    let modal = document.getElementById('contenedor_carrusel')
-    modal.style.display = ''
-})
 
-
+const proyectos = document.getElementsByClassName('proyectos')
+for (const proyecto of proyectos) {
+    proyecto.addEventListener('click', ()=> {
+        const modal = document.getElementById('contenedor_carrusel')
+        fetch('proyectos.json').then((response) => {
+                return response.json();
+        }).then((proyectos_json) => {
+            new Carousel_(modal, proyectos_json[proyecto.id].imagenes);
+        }); 
+    })
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/carrusel.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald&family=PT+Serif:wght@700&family=Roboto&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
@@ -253,39 +254,8 @@
             <p>TRABAJOS DE EXCELENCIA</p>
             <h2 class="recientes">PROYECTOS MAS RECIENTES</h2>
         </div>
-        <div id="contenedor_carrusel">
-            <div class="item_carrusel" id="item_carrusel_1">
-                <div class="ventana_carrusel" id="ventana_carrusel_1">
-                    <img src="assets/images/bg1.jpg" alt="">
-
-                </div>
-                <div class="flechas_carrusel">
-                    <a href="#item_carrusel_3"><i class="bi bi-arrow-left-square-fill"></i></a>
-                    <a href="#item_carrusel_2"><i class="bi bi-arrow-right-square-fill"></i></a>
-                </div>
-            </div>
-            <div class="item_carrusel" id="item_carrusel_2">
-                <div class="ventana_carrusel" id="ventana_carrusel_2">
-                    <img src="assets/images/bg2.jpg" alt="">
-
-                </div>
-                <div class="flechas_carrusel">
-                    <a href="#item_carrusel_1"><i class="bi bi-arrow-left-square-fill"></i></a>
-                    <a href="#item_carrusel_3"><i class="bi bi-arrow-right-square-fill"></i></a>
-                </div>
-            </div>
-            <div class="item_carrusel" id="item_carrusel_3">
-                <div class="ventana_carrusel" id="ventana_carrusel_3">
-                    <img src="assets/images/bg3.jpeg" alt="">
-                </div>
-                <div class="flechas_carrusel">
-                    <a href="#item_carrusel_2"><i class="bi bi-arrow-left-square-fill"></i></a>
-                    <a href="#item_carrusel_1"><i class="bi bi-arrow-right-square-fill"></i></a>
-                </div>
-            </div>
-        </div>
         <div class="tarjetas_obras">
-            <div class="proyectos">
+            <div class="proyectos" id="loma_negra">
                 <div class="tarjeta">
                     <img src="assets/images/loma-negra/3.jpeg" alt="Loma Negra">
                     <div class="capa">
@@ -295,7 +265,7 @@
                     </div>
                 </div>
             </div>
-            <div class="proyectos">
+            <div class="proyectos" id="calle_151">
                 <div class="tarjeta">
                     <img src="assets/images/calle-151/1.jpeg" alt="Calle 151">
                     <div class="capa">
@@ -305,7 +275,7 @@
                     </div>
                 </div>
             </div>
-            <div class="proyectos">
+            <div class="proyectos" id="villa_aurora">
                 <div class="tarjeta">
                     <img src="assets/images/villa-aurora/4.jpeg" alt="Villa Aurora">
                     <div class="capa">
@@ -372,6 +342,10 @@
         </div>
     </footer>
 
+    <div id="contenedor_carrusel">
+    </div>
+
+    <script src="carrusel.js"></script>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
